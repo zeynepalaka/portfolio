@@ -324,7 +324,7 @@ p {
     list-style-type: none;
     padding: 0;
     max-width: 54em;
-    margin: 5% auto 0;
+    margin: 5% auto;
 }
 
 .card {
@@ -344,7 +344,7 @@ p {
 }
 
 .card :last-child {
-    margin-bottom: 0;
+    margin-bottom: 5;
 }
 
 .card--next {
@@ -424,7 +424,7 @@ p {
 
 .contact-content {
     padding: 75px 30px;
-    margin-top: 20px;
+    margin-top: 300px;
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(148, 95, 46);
