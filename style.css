@@ -1,0 +1,908 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,900;1,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Poppins&family=Scope+One&display=swap');
+@import url("https://rsms.me/inter/inter.css");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section,
+p,
+span {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+header {
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar {
+    padding: 10px 0;
+
+}
+
+.banner {
+    position: relative;
+    background: url(./image/menu.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-item a {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+    background-color: rgb(155, 92, 41);
+    color: #fff;
+    border-radius: 50px;
+}
+
+.navbar-dark .navbar-toggler {
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 8.5rem;
+    font-weight: 100;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: rgb(187, 160, 134);
+}
+
+.first-letter {
+    font-size: 10.3rem;
+    font-family: 'Herr Von Muellerhoff', cursive;
+}
+
+.header-text h3 {
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 300;
+    font-style: italic;
+}
+
+header.menu {
+    background-color: rgb(148, 95, 46);
+}
+
+.btn-hakkimda {
+    display: block;
+    background-color: rgb(187, 160, 134);
+    ;
+    color: rgb(155, 92, 41);
+    padding: 10px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    overflow: hidden;
+    /*taşmayı engeller*/
+
+}
+
+/*ABOUT*/
+.about {
+    margin-bottom: 150px;
+}
+
+.about-title {
+    margin: 60px 0;
+
+}
+
+.about-title h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(155, 92, 41);
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.about-title h2::after {
+    content: " ";
+    margin: 0 auto;
+    width: 50px;
+    height: 3px;
+    background-color: rgb(187, 160, 134);
+    display: block;
+    margin-top: 10px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.about-img {
+    width: 40%;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 40%;
+
+}
+
+.about-text a {
+    color: rgb(155, 92, 41);
+}
+
+.about-text h4 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(155, 92, 41);
+    font-family: 'Herr Von Muellerhoff', cursive;
+    letter-spacing: 0.5rem;
+    font-weight: 200;
+}
+
+#pagelines {
+    color: rgb(155, 92, 41);
+    text-align: center;
+    font-size: 33px;
+}
+
+.about-text p {
+    font-size: 15px;
+    text-align: left;
+    color: rgb(46, 45, 44);
+}
+
+/*portfolio*/
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-title h2,
+p {
+    width: 100%;
+    text-align: center;
+    margin: 10 auto;
+    color: rgb(155, 92, 41);
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.portfolio-title p {
+    width: 100%;
+    text-align: center;
+    margin: 10 auto;
+    color: rgb(155, 92, 41);
+    font-size: 15px;
+    font-weight: 200;
+    padding: 20px;
+
+}
+
+.portfolio-title h2::after {
+    content: " ";
+    margin: 0 auto;
+    width: 50px;
+    height: 3px;
+    background-color: rgb(187, 160, 134);
+    display: block;
+    margin-top: 10px;
+}
+
+.portfolio-item {
+    width: 33.3%;
+    height: 300px;
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(155, 92, 41);
+    position: absolute;
+    top: 100;
+    left: 0;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+
+}
+
+.overlay a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.portfolio-item:hover .overlay {
+    top: 0;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+/*Commend Cards*/
+
+.comment-title {
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+    margin: 10 auto;
+    color: rgb(155, 92, 41);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.comment-title h2::after {
+    content: " ";
+    margin: 0 auto;
+    width: 50px;
+    height: 3px;
+    background-color: rgb(187, 160, 134);
+    display: block;
+    margin-top: 10px;
+}
+
+.cards {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    max-width: 54em;
+    margin: 5% auto 0;
+}
+
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgb(155, 92, 41);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 0 40px #000;
+    transform: translateY(0) rotate(4deg) translateX(25px) scale(1);
+    transform-origin: 0 0;
+    transition: transform 0.6s cubic-bezier(.8, .2, .1, 0.8) 0.1s, background 0.4s linear;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card :last-child {
+    margin-bottom: 0;
+}
+
+.card--next {
+    z-index: 5;
+    transform: translateY(-25px) rotate(4deg) translateX(25px) scale(1);
+}
+
+.card--out {
+    animation: card-out 0.6s cubic-bezier(.8, .2, .1, 0.8);
+    transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+    z-index: 1;
+    background: rgb(187, 187, 187);
+}
+
+@keyframes card-out {
+    0% {
+        z-index: 20;
+        transform: translateY(0px) rotate(-4deg);
+    }
+
+    50% {
+        transform: translateY(-120%) rotate(-5deg) translateX(-40px);
+    }
+
+    80% {
+        z-index: 1;
+    }
+
+    100% {
+        transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+    }
+}
+
+.card--current {
+    cursor: auto;
+    user-select: auto;
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+    background: #EEE;
+    transform: rotate(-1deg) translateX(0%) scale(1);
+}
+
+.card h1 {
+    font-size: 35px;
+    font-weight: 800;
+    color: rgb(155, 92, 41);
+}
+
+.card p {
+    font-size: 15px;
+    color: rgb(46, 45, 44);
+}
+
+/***************/
+
+.contact-title h2,
+p {
+    width: 100%;
+    text-align: center;
+    margin: 10 auto;
+    color: rgb(155, 92, 41);
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 100px;
+}
+
+.contact-title h2::after {
+    content: " ";
+    margin: 0 auto;
+    width: 50px;
+    height: 3px;
+    background-color: rgb(187, 160, 134);
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-content {
+    padding: 75px 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(148, 95, 46);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+}
+
+.contact-item .icon {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb(187, 160, 134);
+
+}
+
+.contcat-item p {
+    font-size: 14px;
+    line-height: 33px;
+}
+
+.contact-item a {
+    color: rgb(187, 160, 134);
+}
+
+.contact-item a:hover {
+    color: rgb(187, 187, 187);
+    font-size: 20px;
+}
+
+.end p {
+    padding-top: 0%;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #fff;
+    background: rgb(155, 92, 41);
+}
+
+/********/
+#menu-icon {
+    font-size: 25px;
+    display: none;
+}
+
+/*About*/
+
+/*comment :) */
+.wrapper{
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    margin: 120px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.5);
+  }
+  .wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .wrapper .inputField{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    height: 45px;
+  }
+  .inputField input{
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+  }
+  .inputField input:focus{
+    border-color: rgb(46, 45, 44);
+  }
+  .inputField button{
+    width: 50px;
+    height: 100%;
+    border: none;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 21px;
+    outline: none;
+    background: rgb(148, 95, 46);
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .inputField button:hover,
+  .footer button:hover{
+    background: rgb(148, 95, 46);
+  }
+  .inputField button.active{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .wrapper .todoList{
+    max-height: 30%;
+    overflow-y: auto;
+  }
+  .todoList li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 10px 25px;
+    cursor: default;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+  .todoList li .icon{
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e74c3c;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .todoList li:hover .icon{
+    right: 0px;
+  }
+  .wrapper .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer button{
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+    background: rgb(148, 95, 46);
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+
+/*about me*/
+.about-heading h1 {
+    width: 100%;
+    text-align: center;
+    margin: 10 auto;
+    color: rgb(155, 92, 41);
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 100px;
+
+}
+
+.about-heading h1::after {
+    content: " ";
+    margin: 0 auto;
+    width: 50px;
+    height: 3px;
+    background-color: rgb(187, 160, 134);
+    display: block;
+    margin-top: 10px;
+}
+
+.container-about {
+    padding: 5px 60px;
+    background-color: rgb(155, 92, 41);
+}
+
+.abouthome-title {
+    padding-top: 10%;
+
+}
+
+.abouthome .row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.abouthome .row-1 .image {
+    flex: 2 2 15rem;
+}
+
+.abouthome .row-1 .image img {
+    height: 80%;
+    width: 100%;
+    margin: 60px;
+    object-fit: cover;
+    border: 0.5rem solid rgb(255, 255, 255);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.abouthome .row-1 .content {
+    flex: 1 1 50rem;
+    margin: 22px 25px;
+    padding: 20px;
+    text-align: left;
+}
+
+
+
+.abouthome .row-1 .content h3 {
+    color: #333;
+    font-size: 2.5rem;
+    padding: .5rem 2em;
+    font-family: 'Herr Von Muellerhoff', cursive;
+
+}
+
+.abouthome .row-1 .content p {
+    color: #666;
+    font-size: 1.1rem;
+    padding: .5rem 2rem;
+}
+
+.abouthome .row-1 .content .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.5rem 2rem;
+}
+
+.abouthome .row-1 .content .box-container .boxs {
+    flex: 1 1 20rem;
+}
+
+.abouthome .row-1 .content .box-container .boxs span {
+    color: rgb(155, 92, 41);
+}
+
+.abouthome .row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 50px 20px;
+}
+
+
+.abouthome .row-2 .skills {
+    flex: 1 1 40rem;
+
+}
+
+.abouthome .row-2 .skills .progress {
+    padding: 4.0rem;
+}
+
+.abouthome .row-2 .skills .progress h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: rgb(155, 92, 41);
+
+}
+
+.abouthome .row-2 .skills .progress .bar {
+    width: 100%;
+    background: rgb(187, 160, 134);
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50rem;
+}
+
+.abouthome .row-2 .skills .progress .bar span {
+    display: block;
+    height: 100%;
+    background: rgb(155, 92, 41);
+    border-radius: 50rem;
+}
+.abouthome .row-2 .box-container {
+    flex: 1 1 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.abouthome .row-2 .box-container .boxs {
+    flex: 1 1 15rem;
+    background: rgb(155, 92, 41);
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+.abouthome .row-2 .box-container .boxs h3 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.abouthome .row-2 .box-container .boxs p {
+    color: rgb(187, 160, 134);
+    font-size: 1.7rem;
+    padding-top: .9rem;
+}
+.service .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.service .box-container .boxs {
+    flex: 1 1 30rem;
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.service .box-container .boxs i {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background: rgb(148, 95, 46);
+    border-radius: 50%;
+}
+
+.service .box-container .boxs h3 {
+    color: rgb(148, 95, 46);
+    font-size: 2.2rem;
+    padding-top: 2rem;
+}
+
+.service .box-container .boxs p {
+    color: rgb(187, 160, 134);
+    font-size: 1.7rem;
+    padding-top: .5rem;
+}
+
+.experience .box-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience .box-container .boxs {
+    position: relative;
+    flex: 1 1 33rem;
+    border-left: .2rem solid rgb(148, 95, 46);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+.experience .box-container .boxs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: rgb(148, 95, 46);
+}
+.experience .box-container .boxs .content {
+    background: rgb(155, 92, 41);
+    padding: 1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+.experience .box-container .boxs .content span {
+    color: #fff;
+    font-size: 1.7rem;
+    background: rgb(187, 160, 134);
+    border-radius: 50rem;
+    padding: .4rem 1rem;
+}
+
+.experience .box-container .boxs .content h3 {
+    font-size: 1.5rem;
+    padding: 2.2rem;
+    color: #111;
+}
+
+.experience .box-container .boxs .content p {
+    padding-top: 0%;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: left;
+}
+
+@media only screen and (max-width:990px) {
+    h1 {
+        font-size: 5.5rem;
+    }
+
+    .about-img {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .portfolio .portfolio-item {
+        flex-basis: 50%;
+    }
+
+    .cards {
+        max-width: 34em;
+        margin: 5%;
+    }
+
+
+}
+@media only screen and (max-width:768px) {
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 0.9;
+        margin-top: 20px;
+    }
+
+    .first-letter {
+        font-size: 4.3rem;
+    }
+
+    .header-text h3 {
+        font-size: 16px;
+    }
+
+    .portfolio .portfolio-item {
+        flex-basis: 100%;
+    }
+    .contact-content{
+        flex-direction: column;
+
+    }
+    .contact-item{
+        margin-top: 30px;
+
+    }
+    .cards {
+        max-width: 20em;
+     
+    }
+    .abouthome .row-1 .image img {
+        width: 80%;
+        margin: 30px;
+    }
+    .abouthome .row-1 .content {
+        flex: 1 1 50rem;
+        margin: 2px 2px;
+        padding: 0;
+        text-align: left;
+    }
+    
+  
+
+}
+
